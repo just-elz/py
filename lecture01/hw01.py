@@ -1,18 +1,18 @@
+#нахождение третей стороны через теорему косинуса
 import math
 
-print("введите значение первой стороны")
-a = float(input())
-print("первая сторона треугольника =", a)
+#вводим значения
+a = float(input("enter the value of the first side: "))
+print("first side =", a)
 
-print("введите значение второй стороны")
-b = float(input())
-print("вторая сторона треугольника =", b)
+b = float(input("enter the value of the second side: "))
+print("second side =", b)
 
-print("введите угол между сторонами")
-c = float(input())
-print("угол между первой и второй сторонами треугольника =", c)
+c = float(input("enter the angle between the sides: "))
+print("angle betweed sides =", c)
 
-print("таким образом искомая, третья сторона =",\
+#вывод ответа
+print("so, third side =",
 	math.sqrt(a**2 + b**2 - 2*a*b*math.cos(math.radians(c))))
 
-input()
+input('Press any key to exit')
