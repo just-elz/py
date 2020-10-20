@@ -1,19 +1,16 @@
 # нахождение третей стороны через теорему косинуса
-
+print('this programm will help u find third sid with using the cosine theorem')
 import math
 
 # вводим значения
-a = float(input("enter the value of the first side: "))
-print("first side =", a)
+a = float(input("\nlet's start - enter the value of the first side: "))
 
-b = float(input("enter the value of the second side: "))
-print("second side =", b)
+b = float(input("\nenter the value of the second side: "))
 
-c = float(input("enter the angle between the sides: "))
-print("angle betweed sides =", c)
+c = float(input("\nenter the angle between the sides: "))
 
 # вывод ответа
-print("so, third side =",
+print("\nso, third side =",
 	math.sqrt(a**2 + b**2 - 2*a*b*math.cos(math.radians(c))))
 
-input('Press any key to exit')
+input('\nPress any key to exit')

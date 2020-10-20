@@ -1,13 +1,14 @@
 # перевод двузначного числа написаного цифрами в пропись
+print('this programm will help u display numbers in writing')
 
 # ввод числа
-a = input('enter a number from 0 to 99: ')
+a = input("\nlet's start - enter a number from 0 to 99: ")
 a = a.strip()
 
 # проверка введенных данных
-
 if not a.isdigit():
-	print('incorrcet input')
+	print('\nincorrcet input')
+	input('\nPress any key to exit')
 	exit()
 
 # перевод числа в пропись
@@ -32,25 +33,6 @@ elif a // 10 == 8:
 elif a // 10 == 9:
 	b += 'девяносто '
 
-if a % 10 == 1:			# переводим единицы в пропись
-	b += 'один'
-elif a % 10 == 2:
-	b += 'два'
-elif a % 10 == 3:
-	b += 'три'
-elif a % 10 == 4:
-	b += 'четыре'
-elif a % 10 == 5:
-	b += 'пять'
-elif a % 10 == 6:
-	b += 'шесть'
-elif a % 10 == 7:
-	b += 'семь'
-elif a % 10 == 8:
-	b += 'восемь'
-elif a % 10 == 9:
-	b += 'девять'
-
 if a == 10:				# переводим числа на -дцать и 0 в пропись
 	b += 'десять'
 elif a == 11:
@@ -74,11 +56,32 @@ elif a == 19:
 elif a == 0:
 	b += 'ноль'
 
+elif a % 10 == 1:			# переводим единицы в пропись
+	b += 'один'
+elif a % 10 == 2:
+	b += 'два'
+elif a % 10 == 3:
+	b += 'три'
+elif a % 10 == 4:
+	b += 'четыре'
+elif a % 10 == 5:
+	b += 'пять'
+elif a % 10 == 6:
+	b += 'шесть'
+elif a % 10 == 7:
+	b += 'семь'
+elif a % 10 == 8:
+	b += 'восемь'
+elif a % 10 == 9:
+	b += 'девять'
+
 # вывод ответа
 if b:
-	print(b)
+	print('\nanswer: ', b)
 else:
-	print('incorrcet input')
+
+	print('\nincorrcet input')
+	input('\nPress any key to exit')
 	exit()
 
-input('Press any key to exit')
+input('\nPress any key to exit')
