@@ -5,9 +5,6 @@ a = input('enter a number from 0 to 99: ')
 a = a.strip()
 
 # проверка введенных данных
-if not 1 <= len(a) <= 2:
-	print('incorrcet input')
-	exit()
 
 if not a.isdigit():
 	print('incorrcet input')
@@ -54,7 +51,7 @@ elif a % 10 == 8:
 elif a % 10 == 9:
 	b += 'девять'
 
-if a == 10:				# переводим числа на -дцать в пропись
+if a == 10:				# переводим числа на -дцать и 0 в пропись
 	b += 'десять'
 elif a == 11:
 	b += 'одинадцать'
@@ -74,6 +71,8 @@ elif a == 18:
 	b += 'восемнадцать'
 elif a == 19:
 	b += 'девятнадцать'
+elif a == 0:
+	b += 'ноль'
 
 # вывод ответа
 if b:
