@@ -6,6 +6,11 @@ a = input("\nlet's start - enter a number from 0 to 99: ")
 a = a.strip()
 
 # проверка введенных данных
+if not 1 <= len(a) <= 2:
+	print('\nincorrcet input')
+	input('\nPress any key to exit')
+	exit()
+	
 if not a.isdigit():
 	print('\nincorrcet input')
 	input('\nPress any key to exit')
