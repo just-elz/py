@@ -23,12 +23,11 @@ if degree[0] not in '-':		# блок для положительных знач�
 		print('\nanswer: ', (answer - 32) * 5 / 9,'F')
 
 if degree[0] in '-':			# блок для отрицательных значений
+	degree = degree[1:]
 	if unit in 'fF' and degree[1:].replace('.', '', 1).isdigit():
-		degree = degree[1:]
 		answer = -float(degree)
 		print('\nanswer: ', answer * 9 / 5 + 32,'C')
 	elif unit in 'cC' and degree[1:].replace('.', '', 1).isdigit():
-		degree = degree[1:]
 		answer = -float(degree)
 		print('\nanswer: ', (answer - 32) * 5 / 9,'F')
 
