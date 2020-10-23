@@ -15,17 +15,15 @@ degree, unit = value[:-1], value[-1]
 answer = None
 
 if unit in 'fF':
-	if degree.replace('.', '', 1).isdigit():
-		answer = float(degree)
-	elif degree[1:].replace('.', '', 1).isdigit():
+	if degree.replace('.', '', 1).isdigit() or \
+	degree[0] in '-' and degree[1:].replace('.', '', 1).isdigit():
 		answer = float(degree)
 	if answer:
 		print('\nanswer: ', answer * 9 / 5 + 32,'C')
 
 if unit in 'cC':
-	if degree.replace('.', '', 1).isdigit():
-		answer = float(degree)
-	elif degree[1:].replace('.', '', 1).isdigit():
+	if degree.replace('.', '', 1).isdigit() or \
+	degree[0] in '-' and degree[1:].replace('.', '', 1).isdigit():
 		answer = float(degree)
 	if answer:
 		print('\nanswer: ', (answer - 32) * 5 / 9,'F')
