@@ -1,6 +1,6 @@
 # нахождение третей стороны через теорему косинуса
-print('this programm will help u find third sid with using the cosine theorem')
 import math
+print('this programm will help u find third sid with using the cosine theorem')
 
 # вводим значения
 a = float(input("\nlet's start - enter the value of the first side: "))
