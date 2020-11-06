@@ -28,5 +28,5 @@ for any in value:
 		negative.append(any)
 		neg_sum += any
 
-print(f'ответ: среднее арифметическое для положительных элементов {pos_sum/len(positive)},\
+print(f'\nответ: среднее арифметическое для положительных элементов {pos_sum/len(positive)},\
 	среднее арифметическое для отрицательных элементов {neg_sum/len(negative)}')

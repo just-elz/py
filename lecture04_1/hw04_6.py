@@ -18,4 +18,4 @@ for any in value:
 		break
 	answer.append(any)
 
-print('ответ: ', answer)
+print('\nответ: ', answer)
